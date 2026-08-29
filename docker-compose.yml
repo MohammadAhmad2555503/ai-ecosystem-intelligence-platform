@@ -1,0 +1,59 @@
+services:
+  data-indexer:
+    build:
+      context: .
+      dockerfile: docker/data-indexer/Dockerfile
+    container_name: ai-ecosystem-data-indexer
+    volumes:
+      - ./data:/app/data
+    command: >
+      sh -c "python scripts/build_rag_documents.py &&
+             python scripts/build_vector_index.py"
+
+  model-api:
+    build:
+      context: .
+      dockerfile: docker/model-api/Dockerfile
+    container_name: ai-ecosystem-model-api
+    environment:
+      VECTOR_INDEX_PATH: /app/data/vector_store/local_vector_index.json
+      MODEL_API_HOST: 0.0.0.0
+      MODEL_API_PORT: 8000
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8000:8000"
+    depends_on:
+      data-indexer:
+        condition: service_completed_successfully
+
+  ab-router:
+    build:
+      context: .
+      dockerfile: docker/ab-router/Dockerfile
+    container_name: ai-ecosystem-ab-router
+    environment:
+      MODEL_A_URL: http://model-api:8000/rag-answer
+      MODEL_B_URL: http://model-api:8000/rag-answer
+      MODEL_A_WEIGHT: 0.50
+      REQUEST_LOG_PATH: /app/data/logs/ab_requests.jsonl
+      FEEDBACK_LOG_PATH: /app/data/logs/ab_feedback.jsonl
+      AB_ROUTER_HOST: 0.0.0.0
+      AB_ROUTER_PORT: 8080
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8080:8080"
+    depends_on:
+      - model-api
+
+  mlflow:
+    build:
+      context: .
+      dockerfile: docker/mlflow/Dockerfile
+    container_name: ai-ecosystem-mlflow
+    volumes:
+      - ./data/mlflow:/mlflow
+    ports:
+      - "5000:5000"
+

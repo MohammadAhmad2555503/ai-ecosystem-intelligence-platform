@@ -1,0 +1,5 @@
+NAME                     IMAGE                                          COMMAND                  SERVICE     CREATED          STATUS          PORTS
+ai-ecosystem-ab-router   ai-ecosystem-intelligence-platform-ab-router   "python scripts/run_ΓÇª"   ab-router   52 minutes ago   Up 52 minutes   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+ai-ecosystem-mlflow      ai-ecosystem-intelligence-platform-mlflow      "mlflow server --hosΓÇª"   mlflow      52 minutes ago   Up 52 minutes   0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp
+ai-ecosystem-model-api   ai-ecosystem-intelligence-platform-model-api   "python scripts/run_ΓÇª"   model-api   52 minutes ago   Up 52 minutes   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+

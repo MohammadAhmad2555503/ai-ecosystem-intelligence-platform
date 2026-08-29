@@ -1,0 +1,69 @@
+Dataset 3 Stage 03 Knowledge Graph Construction Report
+================================================================================
+
+Collector version: dataset3_stage03_knowledge_graph_ASTAR_v1.0
+Run ID: D3_STAGE03_20260620T161726Z
+Canonical organisations input: data\processed\Dataset3_Canonical_Organisations.csv
+Canonical links input: data\processed\Dataset3_Canonical_Organisation_Artefact_Links.csv
+
+1. Stage 03 purpose
+- Convert canonical Dataset 3 organisations and links into graph-ready nodes and edges.
+- Build organisation, artefact, platform, topic, cluster, domain, status and entity-type nodes.
+- Preserve organisation-artefact provenance using canonical links.
+- Produce node and edge audit files for integrity checks.
+
+2. Input size
+- Canonical organisation rows: 4,283
+- Canonical organisation-artefact link rows: 7,119
+
+3. Graph size
+- Total nodes: 10,900
+- Total edges: 49,418
+- Organisation nodes: 4,283
+- Artefact nodes: 6,555
+
+4. Node type distribution
+- ARTEFACT: 6,555 (60.14%)
+- ORGANISATION: 4,283 (39.29%)
+- TOPIC: 25 (0.23%)
+- PLATFORM: 11 (0.10%)
+- DOMAIN: 10 (0.09%)
+- ENTITY_TYPE: 6 (0.06%)
+- CLUSTER: 6 (0.06%)
+- STATUS: 4 (0.04%)
+
+5. Edge type distribution
+- HOSTED_ON_PLATFORM: 7,119 (14.41%)
+- HAS_TOPIC: 7,119 (14.41%)
+- CONTRIBUTES_TO_TOPIC: 5,053 (10.23%)
+- OWNS_REPOSITORY: 4,998 (10.11%)
+- OBSERVED_ON_PLATFORM: 4,409 (8.92%)
+- HAS_CANONICAL_STATUS: 4,283 (8.67%)
+- HAS_ENTITY_TYPE: 4,283 (8.67%)
+- ASSOCIATED_WITH_DOMAIN: 3,630 (7.35%)
+- IN_CLUSTER: 1,885 (3.81%)
+- PARTICIPATES_IN_CLUSTER: 1,566 (3.17%)
+- ACTIVE_IN_TOPIC: 1,476 (2.99%)
+- MEMBER_OF_CLUSTER: 1,476 (2.99%)
+- PUBLISHES_MODEL: 1,332 (2.70%)
+- PUBLISHES_DATASET: 789 (1.60%)
+
+6. Integrity checks
+- Duplicate node IDs: 0
+- Duplicate edge IDs: 0
+- Edges with missing source node: 0
+- Edges with missing target node: 0
+- Self-loop edges: 0
+- Organisation node preservation: pass
+
+7. Output files
+- KG nodes: data\graph\Dataset3_KG_Nodes.csv
+- KG edges: data\graph\Dataset3_KG_Edges.csv
+- Node audit: data\graph\Dataset3_KG_Node_Audit.csv
+- Edge audit: data\graph\Dataset3_KG_Edge_Audit.csv
+- KG stats summary: data\graph\Dataset3_KG_Stats_Summary.csv
+
+8. Final Stage 03 verdict
+- Stage 03 readiness: high
+- Runtime seconds: 19.371
+

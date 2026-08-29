@@ -1,0 +1,91 @@
+Dataset 2 Stage 03 Feature Audit Report
+================================================================================
+
+Audit script version: dataset2_feature_audit_ASTAR_v1.0
+Input file: data\processed\Dataset2_Feature_Engineered.csv
+Audit flags output: data\processed\Dataset2_Feature_Audit_Flags.csv
+
+1. Dataset size
+- Records audited: 1,885
+
+2. Required-column checks
+- Missing required columns: 0
+
+3. Core identity checks
+- Duplicate ecosystem_id count: 0
+- Duplicate canonical_artefact_key count: 0
+- Missing core identifier total: 0
+- Invalid source count: 0
+- Invalid artefact type count: 0
+
+4. Score integrity checks
+- Score NaN/missing count: 0
+- Score out-of-range count: 0
+- Expected score range: 0 to 100
+
+5. Feature-status checks
+- Feature quality review count: 0
+- Critical issues inherited from Stage 02: 0
+
+6. Ranking checks
+- ecosystem_rank unique: True
+- ecosystem_rank minimum: 1
+- ecosystem_rank maximum: 1,885
+
+7. Audit flag summary
+- Total audit-flagged rows: 0 (0.00%)
+- Critical audit flags: 0
+- Review audit flags: 0
+
+8. Score summary
+- platform_impact_score: mean=35.683, median=33.365, min=0.000, max=100.000
+- recency_score: mean=77.852, median=70.469, min=12.246, max=100.000
+- maintenance_score: mean=63.682, median=65.000, min=13.285, max=100.000
+- metadata_completeness_score_stage3: mean=76.174, median=80.000, min=54.545, max=100.000
+- evidence_strength_score: mean=82.047, median=83.188, min=62.909, max=96.273
+- innovation_proxy_score: mean=61.701, median=62.700, min=23.270, max=91.752
+- ecosystem_impact_score: mean=59.614, median=58.785, min=20.932, max=96.278
+- ecosystem_percentile: mean=50.027, median=50.026, min=0.053, max=100.000
+
+9. Source distribution
+- github: 1,494 (79.26%)
+- huggingface: 391 (20.74%)
+
+10. Artefact type distribution
+- dataset: 133 (7.06%)
+- model: 258 (13.69%)
+- repository: 1,494 (79.26%)
+
+11. Ecosystem impact band distribution
+- Elite: 19 (1.01%)
+- High: 76 (4.03%)
+- Medium: 283 (15.01%)
+- Emerging: 1,507 (79.95%)
+
+12. Stage 02 review status carried forward
+- no: 1,665 (88.33%)
+- yes_relevance: 36 (1.91%)
+- yes_soft_metadata: 184 (9.76%)
+
+13. Feature quality status distribution
+- ok: 1,885 (100.00%)
+
+14. Top 10 records by ecosystem impact score
+- 1. hermes-agent | github/repository | impact=96.28 | band=Elite
+- 2. AutoGPT | github/repository | impact=95.79 | band=Elite
+- 3. dify | github/repository | impact=94.07 | band=Elite
+- 4. langchain | github/repository | impact=93.71 | band=Elite
+- 5. ragflow | github/repository | impact=93.41 | band=Elite
+- 6. langflow | github/repository | impact=92.69 | band=Elite
+- 7. Flowise | github/repository | impact=91.95 | band=Elite
+- 8. awesome-external system-apps | github/repository | impact=91.81 | band=Elite
+- 9. TradingAgents | github/repository | impact=91.81 | band=Elite
+- 10. LlamaFactory | github/repository | impact=91.54 | band=Elite
+
+15. Final audit verdict
+- Dataset 2 Stage 03 audit readiness: high
+- Scores are proxy indicators and should not be interpreted as objective technical quality.
+- Stage 04 may proceed if readiness is high or medium_high.
+
+
+

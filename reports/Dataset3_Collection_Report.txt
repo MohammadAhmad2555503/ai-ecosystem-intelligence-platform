@@ -1,0 +1,122 @@
+Dataset 3 Stage 01 Strict Final Raw Organisation Collection Report
+================================================================================
+
+Collector version: dataset3_stage01_strict_ASTAR_v4.0
+Collection run ID: D3_STAGE01_20260620T150816Z
+Primary Dataset 2 input: data\processed\Dataset2_Final_Visualisation_Ready.csv
+Source folder: data\external\dataset3_sources
+Web enrichment enabled: False
+Website fetch enabled: False
+
+1. Collection design
+- Dataset 2 final file is the primary source of truth.
+- Legacy rows are retained only if matched to current Dataset 2 or strongly AI-relevant.
+- Crunchbase, YC, Wikidata, unicorn and optional company rows are strictly filtered.
+- The token AI is matched using boundaries, so retail/capital/available false positives are avoided.
+- Contact emails and phone numbers are intentionally excluded.
+- Raw rows are candidates, not final canonical organisations.
+
+2. Dataset size
+- Raw organisation/entity candidates: 6,836
+- Raw organisation-artefact links: 7,883
+- Candidates linked to current Dataset 2: 1,477 (21.61%)
+- External-only filtered candidates: 5,359 (78.39%)
+- Records excluded by strict filters/logged stages: 21,973
+- Loaded source files: 17
+- Missing optional source files: 0
+- Source inventory rows: 17
+- Enrichment audit rows: 6,836
+
+3. Platform distribution
+- github: 4,150 (60.71%)
+- yc_secondary: 1,543 (22.57%)
+- huggingface: 703 (10.28%)
+- yc: 178 (2.60%)
+- unicorn: 80 (1.17%)
+- startup_graph: 70 (1.02%)
+- openalex: 69 (1.01%)
+- crunchbase: 28 (0.41%)
+- wikidata: 15 (0.22%)
+
+4. Raw entity type distribution
+- github_owner: 4,150 (60.71%)
+- startup_candidate: 1,721 (25.18%)
+- huggingface_publisher: 703 (10.28%)
+- funding_company_candidate: 80 (1.17%)
+- startup_or_company_candidate: 70 (1.02%)
+- research_institution: 69 (1.01%)
+- company_candidate: 43 (0.63%)
+
+5. Match status distribution
+- legacy_ai_candidate: 3,099 (45.33%)
+- yc_secondary_ai_startup_candidate: 1,511 (22.10%)
+- current_dataset2_owner: 1,477 (21.61%)
+- external_ai_candidate: 277 (4.05%)
+- yc_ai_startup_candidate: 159 (2.33%)
+- unicorn_ai_candidate: 74 (1.08%)
+- external_research_institution: 69 (1.01%)
+- startup_graph_ai_candidate: 65 (0.95%)
+- yc_secondary_matched_current: 32 (0.47%)
+- crunchbase_ai_candidate: 27 (0.39%)
+- yc_matched_current: 19 (0.28%)
+- wikidata_matched_current: 11 (0.16%)
+- unicorn_matched_current: 6 (0.09%)
+- startup_graph_matched_current: 5 (0.07%)
+- wikidata_ai_candidate: 4 (0.06%)
+- crunchbase_matched_current: 1 (0.01%)
+
+6. Link source layer distribution
+- legacy_dataset3_reference_layer: 5,998 (76.09%)
+- current_dataset2_owner_layer: 1,885 (23.91%)
+
+7. Link match status distribution
+- legacy_retained_ai_candidate_link: 4,766 (60.46%)
+- current_dataset2_link: 1,885 (23.91%)
+- legacy_matched_current_owner: 668 (8.47%)
+- legacy_matched_current_url: 564 (7.15%)
+
+8. Raw quality distribution
+- medium: 3,429 (50.16%)
+- low: 2,022 (29.58%)
+- high: 1,385 (20.26%)
+
+9. Raw review distribution
+- yes_soft_metadata: 5,520 (80.75%)
+- no: 1,316 (19.25%)
+
+10. Source inventory
+- data\processed\Dataset2_Final_Visualisation_Ready.csv | layer=dataset2_owner_layer | decision=primary_source | rows=1885 | status=loaded
+- indeed_and_reed_Raw_Organisations.csv | layer=legacy_dataset3_raw_organisations | decision=use_strict_internal_enrichment | rows=8079 | status=loaded
+- indeed_and_reed_Raw_Organisation_Artefact_Links.csv | layer=legacy_dataset3_raw_links | decision=use_strict_internal_enrichment | rows=11702 | status=loaded
+- indeed and reed_Collection_Log.csv | layer=legacy_dataset3_collection_log | decision=use_provenance | rows=5 | status=loaded
+- github_organizations_fast.csv | layer=github_organisation_layer | decision=use_enrichment | rows=732 | status=loaded
+- huggingface_models_raw.csv | layer=huggingface_model_publisher_layer | decision=use_enrichment | rows=10000 | status=loaded
+- companies_huggingface.csv | layer=huggingface_company_summary_layer | decision=use_support | rows=41 | status=loaded
+- openalex_ai_institutions.csv | layer=openalex_institution_layer | decision=use_enrichment | rows=69 | status=loaded
+- companies_wikidata.csv | layer=wikidata_company_layer | decision=use_strict_filtered_enrichment | rows=6221 | status=loaded
+- 2024-05-11-yc-companies.csv | layer=yc_startup_layer | decision=use_strict_filtered_enrichment | rows=4663 | status=loaded
+- yc_funded_startups_all.csv | layer=yc_secondary_startup_layer | decision=use_strict_filtered_enrichment | rows=5608 | status=loaded
+- company.csv | layer=optional_founder_company_layer | decision=use_strict_filtered_support | rows=1000 | status=loaded
+- founder.csv | layer=optional_founder_layer | decision=use_later_support | rows=2047 | status=loaded
+- tags.csv | layer=optional_tag_layer | decision=use_later_support | rows=202 | status=loaded
+- company_to_tag.csv | layer=optional_company_tag_layer | decision=use_later_support | rows=4185 | status=loaded
+- crunchbase-companies-information.csv | layer=crunchbase_company_layer | decision=use_strict_filtered_enrichment | rows=1000 | status=loaded
+- World_Wide_Unicorn_Startups.csv | layer=worldwide_unicorn_layer | decision=use_strict_filtered_enrichment | rows=936 | status=loaded
+
+11. Integrity checks
+- Duplicate raw_entity_id count: 0
+- Duplicate raw_link_id count: 0
+- Links missing raw_entity_id: 0
+- Raw organisations missing raw_name: 0
+
+12. Legacy and external source handling
+- Old topic labels, old cluster labels and old impact scores are not treated as current truth.
+- Crunchbase-style fields are limited to safe public business metadata.
+- Worldwide unicorn rows are deduplicated and strictly filtered.
+- Contact emails, phone numbers and weak toy AI-tool data are excluded.
+- Legacy collection log rows inspected: 5
+
+13. Final Stage 01 verdict
+- Dataset 3 Stage 01 raw collection readiness: medium_high
+- Runtime seconds: 55.404
+

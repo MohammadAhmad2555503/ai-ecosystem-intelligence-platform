@@ -1,0 +1,82 @@
+Dataset 1 Topic Modelling Report - Final A* Version
+================================================================================
+
+Topic modelling script version: dataset1_topic_modelling_ASTAR_final_v3.0
+Input file: data\processed\Dataset1_Feature_Engineered.csv
+Topic-modelled output: data\processed\Dataset1_Topic_Modelled.csv
+Topic summary output: data\processed\Dataset1_Topic_Summary.csv
+
+1. Model configuration
+- Method: TF-IDF + Non-negative Matrix Factorisation
+- Topic text used: title + abstract only
+- Manual theme labels were not used as topic-modelling input
+- Strong stopwords were used to reduce academic, external system and bibliographic noise
+- Requested number of topics: 14
+- Actual number of final topics in summary: 14
+- Max TF-IDF features: 7000
+- min_df: 8
+- max_df: 0.72
+- Random state: 42
+
+2. Dataset size
+- Topic-modelled rows: 9,052
+
+3. Topic confidence
+- Mean topic probability: 0.4468
+- Mean topic gap: 0.2111
+- Mean topic entropy: 0.7317
+- Ambiguous topic assignments: 1,821 (20.12%)
+- high: 2,865 (31.65%)
+- low: 1,772 (19.58%)
+- medium: 2,188 (24.17%)
+- medium_high: 2,227 (24.60%)
+
+4. Noise handling
+- Records reassigned from detected metadata-noise topics: 0
+- Noise topics remaining in final topic summary: 0
+
+5. Topic coherence
+- Mean topic coherence proxy: 6.3943
+- Coherence proxy is based on co-occurrence of top topic terms across documents.
+
+6. Topic distribution
+- external system Agents and Tool Use: 1,640 (18.12%)
+- RAG and Knowledge-Grounded Generation: 1,515 (16.74%)
+- Evaluation and Benchmarks: 959 (10.59%)
+- Fine-Tuning and Domain Adaptation: 811 (8.96%)
+- Privacy / Security / Insights / Key: 807 (8.92%)
+- Healthcare and Clinical Applications: 739 (8.16%)
+- Hallucination and Factuality: 565 (6.24%)
+- Knowledge Graphs and Structured Retrieval: 543 (6.00%)
+- Reasoning and Prompting: 525 (5.80%)
+- Multimodal and Vision-external systems: 404 (4.46%)
+- Dense Retrieval and Query Search: 276 (3.05%)
+- Question Answering and Domain QA: 268 (2.96%)
+
+7. Topic summary
+- Topic 1: RAG and Knowledge-Grounded Generation | 1,515 docs | coherence=6.457 | terms: rag; retrieval; retrieval augmented; augmented; augmented rag; knowledge; external; information; accuracy; context; external knowledge; retrieved
+- Topic 3: external system Agents and Tool Use | 1,062 docs | coherence=6.416 | terms: agent; agents; multi agent; multi; autonomous; planning; decision; decision making; making; agentic; complex; environments
+- Topic 11: Evaluation and Benchmarks | 959 docs | coherence=5.562 | terms: evaluation; benchmark; code; evaluating; benchmarks; evaluate; languages; source; metrics; multilingual; test; capabilities
+- Topic 12: Privacy / Security / Insights / Key | 807 docs | coherence=5.470 | terms: privacy; security; insights; key; risks; capabilities; engineering; practical; advancements; literature; critical; strategies
+- Topic 2: Healthcare and Clinical Applications | 739 docs | coherence=6.949 | terms: clinical; medical; patient; healthcare; health; care; decision; medicine; diagnostic; diagnosis; clinical decision; patients
+- Topic 9: external system Agents and Tool Use | 578 docs | coherence=6.076 | terms: chatbot; model; education; questions; students; tools; educational; chatbot; chatbots; research lab; accuracy; research lab
+- Topic 5: Hallucination and Factuality | 565 docs | coherence=6.263 | terms: hallucination; hallucinations; detection; factual; hallucination detection; reliability; mitigation; outputs; mitigating; incorrect; factually; factuality
+- Topic 8: Knowledge Graphs and Structured Retrieval | 543 docs | coherence=6.819 | terms: graph; knowledge; graphs; knowledge graph; knowledge graphs; kgs; reasoning; structured; entities; graph retrieval; entity; graphs kgs
+- Topic 4: Reasoning and Prompting | 525 docs | coherence=7.319 | terms: reasoning; thought; chain; chain thought; cot; prompting; thought cot; step; cot prompting; steps; logical; complex
+- Topic 10: Fine-Tuning and Domain Adaptation | 437 docs | coherence=6.479 | terms: fine; tuning; fine tuning; tuned; fine tuned; training; instruction; supervised; llama; supervised fine; instruction tuning; tune
+- Topic 7: Multimodal and Vision-external systems | 404 docs | coherence=6.993 | terms: visual; multimodal; image; vision; images; mllms; modal; video; multi modal; lvlms; object; modalities
+- Topic 13: Fine-Tuning and Domain Adaptation | 374 docs | coherence=6.380 | terms: shot; zero shot; zero; prompt; prompting; prompts; model; input design; engineering; shot prompting; shot shot; classification
+- Topic 0: Dense Retrieval and Query Search | 276 docs | coherence=5.986 | terms: query; retrieval; dense; document; documents; search; dense retrieval; training; semantic; queries; context; ranking
+- Topic 6: Question Answering and Domain QA | 268 docs | coherence=6.351 | terms: question; answering; question answering; questions; answer; answers; hop; multi hop; medical question; medical; multi; question answer
+
+8. Academic interpretation
+- Topic labels are generated from top TF-IDF/NMF terms using transparent rules.
+- Topic probabilities are relative NMF weights normalised per paper.
+- Ambiguous topic assignments are retained but flagged for cautious interpretation.
+- Metadata-noise topics are detected and handled through reassignment to the next strongest non-noise topic.
+- The model uses only title and abstract text, avoiding contamination from earlier keyword theme labels.
+- No metadata was invented during topic modelling.
+
+
+
+

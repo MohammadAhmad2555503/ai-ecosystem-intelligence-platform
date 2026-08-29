@@ -1,0 +1,21 @@
+{
+  "step": "Step 6 final draft",
+  "test_run_return_code": 0,
+  "test_run_output": [
+    "\u2705 Sunny day test passed: A/B result payload was created.",
+    "\u2705 Edge case test passed: local MLflow fallback was written.",
+    "\u2705 Weird gotcha test passed: statistical p-value was calculated.",
+    "\u2705 Bug catcher test passed: joined feedback count was preserved."
+  ],
+  "test_run_error": "",
+  "demo_run_return_code": 0,
+  "demo_run_output": "A/B analysis complete. Decision: hold",
+  "demo_run_error": "",
+  "style_report": {
+    "long_functions_over_15_lines": [],
+    "long_lines_over_100_chars": [],
+    "single_letter_names": []
+  },
+  "runtime_folders_removed": true,
+  "final_verdict": "pass"
+}

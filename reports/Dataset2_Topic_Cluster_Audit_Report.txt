@@ -1,0 +1,84 @@
+Dataset 2 Stage 04 Topic and Cluster Audit Report
+================================================================================
+
+Audit script version: dataset2_topic_cluster_audit_ASTAR_v1.0
+Topic-modelled input: data\processed\Dataset2_Topic_Modelled.csv
+Topic summary input: data\processed\Dataset2_Topic_Summary.csv
+Cluster summary input: data\processed\Dataset2_Cluster_Summary.csv
+Audit flags output: data\processed\Dataset2_Topic_Cluster_Audit_Flags.csv
+
+1. Dataset size
+- Topic-modelled records audited: 1,885
+- Topic summary record total: 1,885
+- Cluster summary record total: 1,885
+
+2. Topic integrity
+- Topic count: 12
+- Duplicate topic labels: 0
+- Generic topic labels: 0
+- Missing topic labels in model file: 0
+- Ambiguous topic assignments: 260 (13.79%)
+- High or medium-high confidence assignments: 1,606 (85.20%)
+- Mean topic probability: 0.7251
+- Mean topic gap: 0.5758
+- Mean topic entropy: 0.4481
+
+3. Cluster integrity
+- Cluster count: 6
+- Duplicate cluster labels: 0
+- Missing cluster labels in model file: 0
+- Mean cluster confidence: 56.177
+
+4. Audit flag summary
+- Total audit flags: 0
+- Critical audit flags: 0
+- Review audit flags: 0
+
+5. Source distribution
+- github: 1,494 (79.26%)
+- huggingface: 391 (20.74%)
+
+6. Artefact type distribution
+- dataset: 133 (7.06%)
+- model: 258 (13.69%)
+- repository: 1,494 (79.26%)
+
+7. Topic confidence distribution
+- high: 1,302 (69.07%)
+- low: 4 (0.21%)
+- medium: 275 (14.59%)
+- medium_high: 304 (16.13%)
+
+8. Topic ambiguity distribution
+- no: 1,625 (86.21%)
+- yes: 260 (13.79%)
+
+9. Top 12 topics by record count
+- Topic 5: Agentic Workflows and Tool-Using external systems | records=339 | mean impact=68.59
+- Topic 11: Multimodal and Vision-Language AI | records=178 | mean impact=66.02
+- Topic 8: Evaluation, Benchmarks and Safety | records=171 | mean impact=61.51
+- Topic 0: Retrieval-Augmented Generation Pipelines | records=167 | mean impact=63.98
+- Topic 1: Fine-Tuning, LoRA and Model Adaptation | records=167 | mean impact=58.39
+- Topic 2: Hallucination Detection and Verification | records=147 | mean impact=49.16
+- Topic 3: Knowledge Graph and Structured Retrieval | records=142 | mean impact=61.81
+- Topic 6: Dense Retrieval and Passage Search | records=137 | mean impact=43.35
+- Topic 7: Embedding Models and Semantic Retrieval - Vector and Database Focus | records=133 | mean impact=58.99
+- Topic 9: RAG Application Pipelines and Document QA | records=111 | mean impact=55.63
+- Topic 4: Embedding Models and Semantic Retrieval | records=108 | mean impact=56.48
+- Topic 10: Dataset Formats and Metadata Infrastructure | records=85 | mean impact=51.20
+
+10. Clusters by record count
+- Cluster 0: Retrieval and RAG Ecosystem Cluster - Higher-Impact Repository Group | records=697 | mean impact=60.95
+- Cluster 3: High-Impact GitHub Implementation Cluster | records=424 | mean impact=78.65
+- Cluster 2: Retrieval and RAG Ecosystem Cluster - Lower-Impact Repository Group | records=317 | mean impact=45.09
+- Cluster 5: Metadata-Limited Hugging Face Review Cluster | records=168 | mean impact=40.74
+- Cluster 1: Hugging Face Model Adoption Cluster | records=145 | mean impact=56.40
+- Cluster 4: Hugging Face Dataset Reuse Cluster | records=134 | mean impact=53.92
+
+11. Final audit verdict
+- Dataset 2 Stage 04 audit readiness: high
+- Topic and cluster labels are analytical summaries, not objective ground-truth categories.
+- Stage 05 may proceed if readiness is high or medium_high.
+
+
+

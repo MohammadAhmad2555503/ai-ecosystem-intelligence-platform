@@ -1,0 +1,90 @@
+Dataset 1 Final Quality Audit Report
+================================================================================
+
+Final audit script version: dataset1_final_quality_audit_ASTAR_v1.0
+Input topic-modelled dataset: data\processed\Dataset1_Topic_Modelled.csv
+Input topic summary: data\processed\Dataset1_Topic_Summary.csv
+Final visualisation-ready output: data\final\Dataset1_Final_Visualisation_Ready.csv
+Dashboard summary output: data\final\Dataset1_Final_Dashboard_Summary.csv
+
+1. Final dataset size
+- Final visualisation-ready records: 9,052
+- Final unique topic labels: 12
+- Final topic IDs: 14
+
+2. Critical quality checks
+- Duplicate paper IDs: 0
+- Missing titles: 0
+- Missing abstracts: 0
+- Invalid years: 0
+- Missing topic labels: 0
+- Suspicious/noise topic labels: 0
+- Critical issue total: 0
+
+3. Topic assignment quality
+- Mean topic probability: 0.4468
+- Mean topic gap: 0.2111
+- Mean topic entropy: 0.7317
+- Mean topic coherence proxy: 6.3492
+- Ambiguous topic assignments: 1,821 (20.12%)
+- High or medium-high confidence topic assignments: 5,092 (56.25%)
+
+4. Research value
+- Mean research value score: 6.7585
+- High value records: 6,234 (68.87%)
+- Very high value records: 184 (2.03%)
+- Recent records: 3,838 (42.40%)
+
+5. Topic distribution
+- external system Agents and Tool Use: 1,640 (18.12%)
+- RAG and Knowledge-Grounded Generation: 1,515 (16.74%)
+- Evaluation and Benchmarks: 959 (10.59%)
+- Fine-Tuning and Domain Adaptation: 811 (8.96%)
+- Privacy, Security and Responsible AI Risks: 807 (8.92%)
+- Healthcare and Clinical Applications: 739 (8.16%)
+- Hallucination and Factuality: 565 (6.24%)
+- Knowledge Graphs and Structured Retrieval: 543 (6.00%)
+- Reasoning and Prompting: 525 (5.80%)
+- Multimodal and Vision-external systems: 404 (4.46%)
+- Dense Retrieval and Query Search: 276 (3.05%)
+- Question Answering and Domain QA: 268 (2.96%)
+
+6. Year distribution
+- 2020: 109 (1.20%)
+- 2021: 128 (1.41%)
+- 2022: 285 (3.15%)
+- 2023: 1,628 (17.98%)
+- 2024: 3,064 (33.85%)
+- 2025: 2,201 (24.32%)
+- 2026: 1,637 (18.08%)
+
+7. Source distribution
+- arxiv: 1,604 (17.72%)
+- crossref: 669 (7.39%)
+- openalex: 6,779 (74.89%)
+
+8. Research value band distribution
+- high: 6,050 (66.84%)
+- medium: 368 (4.07%)
+- medium_high: 2,450 (27.07%)
+- very_high: 184 (2.03%)
+
+9. Topic confidence distribution
+- high: 2,865 (31.65%)
+- low: 1,772 (19.58%)
+- medium: 2,188 (24.17%)
+- medium_high: 2,227 (24.60%)
+
+10. Final readiness judgement
+- Dataset readiness: high
+
+11. Academic interpretation
+- The final dataset is ready for dissertation visualisation and analysis.
+- The dashboard summary uses a compact long format to avoid unnecessary extra output files.
+- Topic labels were cleaned only for presentation; original research metadata was not invented or altered.
+- Ambiguous topic assignments remain in the dataset but are explicitly flagged.
+- Citation and research-value fields remain proxy indicators and should be described as such.
+- No fake authors, institutions, countries or citation counts were generated.
+
+
+

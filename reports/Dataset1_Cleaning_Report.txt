@@ -1,0 +1,61 @@
+Dataset 1 A* Cleaning Report
+================================================================================
+
+Cleaning script version: dataset1_clean_ASTAR_final_v2.0
+Input file: data\raw\Dataset1_Raw_Public_Final.csv
+Final clean output: data\processed\Dataset1_Research_Literature_Clean_Final.csv
+Duplicate audit output: data\processed\Dataset1_Duplicate_Audit.csv
+
+1. Dataset size
+- Raw input rows: 10,192
+- Prepared rows: 10,192
+- Rows removed before deduplication: 88 (0.86%)
+- Rows entering deduplication: 10,104
+- Final clean unique rows: 9,053
+
+2. Duplicate handling
+- Rows involved in duplicate clusters: 1,982
+- Duplicate clusters: 931
+- Rows removed by deduplication: 1,051
+- Duplicate methods used: DOI, arXiv ID, link and exact normalised title.
+
+3. Remaining duplicate checks in final dataset
+- Remaining duplicate normalised titles: 1
+- Remaining duplicate DOIs: 0
+- Remaining duplicate arXiv IDs: 0
+
+4. Raw quality issues before filtering
+- Missing abstracts: 0 (0.00%)
+- Short abstracts: 88 (0.86%)
+- Invalid/out-of-scope years: 0 (0.00%)
+- Weak relevance records: 0 (0.00%)
+
+5. Source distribution before cleaning
+- arxiv: 1,781 (17.47%)
+- crossref: 945 (9.27%)
+- openalex: 7,466 (73.25%)
+
+6. Representative source distribution after cleaning
+- arxiv: 1,604 (17.72%)
+- crossref: 669 (7.39%)
+- openalex: 6,780 (74.89%)
+
+7. Final quality flags
+- high: 7,009 (77.42%)
+- high_multi_source: 353 (3.90%)
+- medium: 547 (6.04%)
+- medium_high: 1,144 (12.64%)
+
+8. Academic interpretation
+- The final file is the analysis-ready Dataset 1 literature layer.
+- It contains only records with a title, abstract, valid year and minimum relevance score.
+- Duplicate papers across arXiv, OpenAlex and Crossref were merged into single research-work records.
+- The selected row is the best representative record, while all source provenance is preserved.
+- Citation values are preserved as raw source metadata and should not be overinterpreted as a perfectly comparable impact measure.
+- No fake authors, countries, institutions or citation values were generated.
+
+9. Submission recommendation
+- Submit Dataset1_Research_Literature_Clean_Final.csv as the final cleaned Dataset 1.
+- Keep Dataset1_Duplicate_Audit.csv as supporting evidence.
+- Include this report in the appendix or project folder.
+

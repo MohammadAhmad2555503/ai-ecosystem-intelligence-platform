@@ -1,0 +1,71 @@
+Dataset 2 Stage 02 v2 Cleaning, Validation and Issue Audit Report
+================================================================================
+
+Cleaning script version: dataset2_clean_validate_ASTAR_v2.0
+Input file: data\raw\Dataset2_Raw_Ecosystem.csv
+Clean output: data\processed\Dataset2_Clean_Validated_v2.csv
+Duplicate audit output: data\processed\Dataset2_Duplicate_Audit_v2.csv
+Metadata issue audit output: data\processed\Dataset2_Metadata_Issue_Audit_v2.csv
+
+1. Dataset size
+- Raw input rows: 1,885
+- Prepared rows: 1,885
+- Rows removed before deduplication: 0 (0.00%)
+- Rows entering deduplication: 1,885
+- Final clean validated rows: 1,885
+
+2. Deduplication
+- Rows involved in duplicate groups: 0
+- Duplicate groups: 0
+- Rows removed by deduplication: 0
+- Deduplication key: source + artefact type + canonical artefact ID or canonical URL.
+
+3. Critical issue status
+- Final records with critical issues: 0
+- Dataset readiness: high
+
+4. Review and soft-metadata status
+- Final records marked for review: 220 (11.67%)
+- no: 1,665 (88.33%)
+- yes_relevance: 36 (1.91%)
+- yes_soft_metadata: 184 (9.76%)
+
+5. Description status
+- available_detailed: 1,413 (74.96%)
+- available_short: 111 (5.89%)
+- missing: 20 (1.06%)
+- platform_missing_or_not_returned: 341 (18.09%)
+
+6. Tags/topics status
+- available: 1,383 (73.37%)
+- missing_or_not_set_by_repository_owner: 502 (26.63%)
+
+7. Licence status
+- available: 1,157 (61.38%)
+- missing_or_not_returned: 728 (38.62%)
+
+8. Final source distribution
+- github: 1,494 (79.26%)
+- huggingface: 391 (20.74%)
+
+9. Final artefact type distribution
+- dataset: 133 (7.06%)
+- model: 258 (13.69%)
+- repository: 1,494 (79.26%)
+
+10. Final relevance flag distribution
+- high: 1,226 (65.04%)
+- medium: 87 (4.62%)
+- medium_high: 572 (30.34%)
+
+11. Final quality flag distribution
+- high: 1,885 (100.00%)
+
+12. Academic notes
+- Missing platform metadata was not invented or backfilled.
+- Hugging Face description gaps are treated as platform metadata limitations, not automatic errors.
+- GitHub library/framework gaps are treated as not applicable because GitHub exposes language rather than model framework.
+- Public platform metrics were preserved and standardised, not fabricated.
+- Review records are retained but clearly marked so later analysis can filter them if needed.
+- Stage 03 should use the quality and review flags when creating popularity, activity and ecosystem impact scores.
+

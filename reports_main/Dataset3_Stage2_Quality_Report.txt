@@ -1,0 +1,79 @@
+Dataset 3 Stage 02 Canonical Organisation Resolution Report
+================================================================================
+
+Collector version: dataset3_stage02_canonical_resolution_ASTAR_v1.1_strict
+Run ID: D3_STAGE02_20260620T153914Z
+Raw organisations input: data\raw\Dataset3_Raw_Organisations.csv
+Raw links input: data\raw\Dataset3_Raw_Organisation_Artefact_Links.csv
+
+1. Stage 02 purpose
+- Clean and canonicalise the Dataset 3 raw organisation/entity layer.
+- Keep all current Dataset 2-linked organisations.
+- Keep strong external AI, research, startup and company candidates.
+- Quarantine weak external-only records rather than deleting evidence.
+- Build canonical organisation IDs and canonical organisation-artefact links.
+
+2. Dataset size
+- Raw organisation rows: 6,836
+- Raw organisation links: 7,883
+- Kept raw rows: 4,419 (64.64%)
+- Quarantined raw rows: 2,417 (35.36%)
+- Canonical organisations: 4,283
+- Canonical organisation-artefact links: 7,119
+- Entity resolution audit rows: 6,836
+
+3. Current Dataset 2 preservation check
+- Current Dataset 2-linked raw rows: 1,477
+- Current Dataset 2-linked rows kept: 1,477
+- Current Dataset 2 preservation status: pass
+
+4. Canonical status distribution
+- linked_legacy_ai_actor_candidate: 2,450 (57.20%)
+- confirmed_current_ecosystem_actor: 1,476 (34.46%)
+- enriched_external_ai_candidate: 298 (6.96%)
+- confirmed_research_institution_candidate: 59 (1.38%)
+
+5. Canonical entity type distribution
+- open_source_organisation_or_owner: 3,730 (87.09%)
+- model_or_dataset_publisher: 472 (11.02%)
+- research_institution: 59 (1.38%)
+- startup_candidate: 17 (0.40%)
+- company_or_organisation_candidate: 4 (0.09%)
+- funding_company_candidate: 1 (0.02%)
+
+6. Evidence level distribution
+- review: 2,807 (65.54%)
+- medium: 780 (18.21%)
+- high: 696 (16.25%)
+
+7. Stage 02 action distribution
+- keep: 4,419 (64.64%)
+- quarantine: 2,417 (35.36%)
+
+8. Quarantined platform distribution
+- yc_secondary: 1,512 (62.56%)
+- github: 420 (17.38%)
+- yc: 159 (6.58%)
+- huggingface: 156 (6.45%)
+- unicorn: 74 (3.06%)
+- startup_graph: 65 (2.69%)
+- crunchbase: 27 (1.12%)
+- wikidata: 4 (0.17%)
+
+9. Integrity checks
+- Duplicate canonical_entity_id count: 0
+- Duplicate canonical_link_id count: 0
+- Canonical links missing canonical_entity_id: 0
+- Audit rows match raw organisations: yes
+
+10. Output files
+- Canonical organisations: data\processed\Dataset3_Canonical_Organisations.csv
+- Canonical organisation-artefact links: data\processed\Dataset3_Canonical_Organisation_Artefact_Links.csv
+- Entity resolution audit: data\processed\Dataset3_Entity_Resolution_Audit.csv
+- Quarantined raw organisations: data\processed\Dataset3_Quarantined_Raw_Organisations.csv
+- Stage 2 cleaning log: data\processed\Dataset3_Stage2_Cleaning_Log.csv
+
+11. Final Stage 02 verdict
+- Stage 02 readiness: high
+- Runtime seconds: 209.853
+

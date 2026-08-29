@@ -1,0 +1,14 @@
+"model_key","model_name","display_model_name","method_family","source_stage","model_type","true_positive","false_positive","true_negative","false_negative"
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model",13,7,1051,0
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model",13,7,1051,0
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline",0,0,1058,13
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model",12,10,1048,1
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model",12,5,1053,1
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model",12,5,1053,1
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model",13,25,1033,0
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model",13,7,1051,0
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline",0,0,1058,13
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model",13,31,1027,0
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model",12,1,1057,1
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model",3,0,1058,10
+

@@ -1,0 +1,89 @@
+Dataset 2 Stage 04 Topic Modelling and Ecosystem Clustering Report
+================================================================================
+
+Stage 04 version: dataset2_topic_clustering_ASTAR_v3.0
+Input file: data\processed\Dataset2_Feature_Engineered.csv
+Topic-modelled output: data\processed\Dataset2_Topic_Modelled.csv
+Topic summary output: data\processed\Dataset2_Topic_Summary.csv
+Cluster summary output: data\processed\Dataset2_Cluster_Summary.csv
+
+1. Dataset size
+- Records processed: 1,885
+
+2. Topic modelling configuration
+- Method: TF-IDF + Non-negative Matrix Factorisation
+- Requested topics: 12
+- Final topics used: 12
+- Unique topic labels: 12
+- Duplicate topic labels: 0
+- Generic topic labels: 0
+- TF-IDF max features: 3,500
+- TF-IDF min_df: 2
+- TF-IDF max_df: 0.8
+
+3. Topic quality summary
+- Topic labels missing: 0
+- Ambiguous topic assignments: 260 (13.79%)
+- High or medium-high topic confidence: 1,606 (85.20%)
+- Mean topic probability: 0.7251
+- Mean topic gap: 0.5758
+- Mean topic entropy: 0.4481
+
+4. Topic distribution
+- Topic 5: Agentic Workflows and Tool-Using external systems | records=339 | share=17.98% | mean impact=68.59
+- Topic 11: Multimodal and Vision-Language AI | records=178 | share=9.44% | mean impact=66.02
+- Topic 8: Evaluation, Benchmarks and Safety | records=171 | share=9.07% | mean impact=61.51
+- Topic 0: Retrieval-Augmented Generation Pipelines | records=167 | share=8.86% | mean impact=63.98
+- Topic 1: Fine-Tuning, LoRA and Model Adaptation | records=167 | share=8.86% | mean impact=58.39
+- Topic 2: Hallucination Detection and Verification | records=147 | share=7.80% | mean impact=49.16
+- Topic 3: Knowledge Graph and Structured Retrieval | records=142 | share=7.53% | mean impact=61.81
+- Topic 6: Dense Retrieval and Passage Search | records=137 | share=7.27% | mean impact=43.35
+- Topic 7: Embedding Models and Semantic Retrieval - Vector and Database Focus | records=133 | share=7.06% | mean impact=58.99
+- Topic 9: RAG Application Pipelines and Document QA | records=111 | share=5.89% | mean impact=55.63
+- Topic 4: Embedding Models and Semantic Retrieval | records=108 | share=5.73% | mean impact=56.48
+- Topic 10: Dataset Formats and Metadata Infrastructure | records=85 | share=4.51% | mean impact=51.20
+
+5. Clustering configuration
+- Method: Standardised numeric features + KMeans
+- Requested clusters: 6
+- Final clusters used: 6
+- Unique cluster labels: 6
+- Duplicate cluster labels: 0
+
+6. Cluster quality summary
+- Cluster labels missing: 0
+- Mean cluster confidence: 56.177
+
+7. Cluster distribution
+- Cluster 3: High-Impact GitHub Implementation Cluster | records=424 | share=22.49% | mean impact=78.65
+- Cluster 0: Retrieval and RAG Ecosystem Cluster - Higher-Impact Repository Group | records=697 | share=36.98% | mean impact=60.95
+- Cluster 1: Hugging Face Model Adoption Cluster | records=145 | share=7.69% | mean impact=56.40
+- Cluster 4: Hugging Face Dataset Reuse Cluster | records=134 | share=7.11% | mean impact=53.92
+- Cluster 2: Retrieval and RAG Ecosystem Cluster - Lower-Impact Repository Group | records=317 | share=16.82% | mean impact=45.09
+- Cluster 5: Metadata-Limited Hugging Face Review Cluster | records=168 | share=8.91% | mean impact=40.74
+
+8. Top 15 topic-modelled ecosystem artefacts
+- hermes-agent | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=96.28
+- AutoGPT | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=95.79
+- dify | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=94.07
+- langchain | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=93.71
+- ragflow | topic=Retrieval-Augmented Generation Pipelines | cluster=High-Impact GitHub Implementation Cluster | impact=93.41
+- langflow | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=92.69
+- Flowise | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=91.95
+- awesome-external system-apps | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=91.81
+- TradingAgents | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=91.81
+- LlamaFactory | topic=Fine-Tuning, LoRA and Model Adaptation | cluster=High-Impact GitHub Implementation Cluster | impact=91.54
+- MetaGPT | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=91.04
+- ECC | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=90.90
+- anything-external system | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=90.84
+- Prompt-Engineering-Guide | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=90.78
+- autogen | topic=Agentic Workflows and Tool-Using external systems | cluster=High-Impact GitHub Implementation Cluster | impact=90.78
+
+9. Final Stage 04 readiness
+- Dataset 2 Stage 04 readiness: high
+- Topic and cluster labels are analytical summaries and should be interpreted critically.
+- Stage 05 should audit final topic/cluster outputs and prepare visualisation-ready summaries.
+
+
+
+

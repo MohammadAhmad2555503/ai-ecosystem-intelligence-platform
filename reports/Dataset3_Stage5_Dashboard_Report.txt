@@ -1,0 +1,51 @@
+Dataset 3 Stage 05 Dashboard-Ready Summary and Dissertation Results Report
+==========================================================================================
+
+Collector version: dataset3_stage05_dashboard_results_v3_field_limit_fix
+
+1. Input size
+- Organisation influence rows: 4,283
+- Graph centrality rows: 10,900
+- Topic leadership rows: 25
+- Platform dominance rows: 11
+- Domain influence rows: 10
+- Cluster bridge rows: 6
+- KG nodes: 10,900
+- KG edges: 49,418
+
+2. Output size
+- KPI summary rows: 14
+- Top organisation dashboard rows: 100
+- Topic dashboard rows: 25
+- Platform dashboard rows: 11
+- Domain dashboard rows: 10
+- Cluster dashboard rows: 6
+- KG overview rows: 22
+- Stage 5 audit rows: 11
+
+3. Key dissertation-ready findings
+- Top organisation by influence score: microsoft (CORG_002127)
+- Highest influence score: 79.258
+
+4. Influence band distribution
+- high: 2 (0.05%)
+- medium: 50 (1.17%)
+- emerging: 1,039 (24.26%)
+- low: 3,192 (74.53%)
+
+5. Output files
+- Dataset3_Dashboard_KPI_Summary.csv
+- Dataset3_Dashboard_Top_Organisations.csv
+- Dataset3_Dashboard_Topic_Leadership.csv
+- Dataset3_Dashboard_Platform_Dominance.csv
+- Dataset3_Dashboard_Domain_Influence.csv
+- Dataset3_Dashboard_Cluster_Bridge.csv
+- Dataset3_Dashboard_KG_Overview.csv
+- Dataset3_Dissertation_Result_Tables.xlsx
+- Dataset3_Stage5_Dashboard_Audit.csv
+
+6. Final Stage 05 verdict
+- Failed Stage 5 audit metrics: 0
+- Stage 05 readiness: high
+- Runtime seconds: 1.541
+

@@ -1,0 +1,13 @@
+"file_name","status","row_count","script_version"
+"dashboard_kpis.csv","created",7,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"model_metric_long_table.csv","created",84,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"model_ranking_table.csv","created",12,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"family_summary_table.csv","created",2,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"best_model_summary_table.csv","created",5,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"confusion_summary_table.csv","created",12,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"prediction_distribution_table.csv","created",12,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"top_feature_importance_table.csv","created",30,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"feature_importance_by_model_table.csv","created",46,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"top_organisations_table.csv","created",25,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+"dashboard_manifest.csv","created",11,"research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+

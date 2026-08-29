@@ -1,0 +1,49 @@
+{
+    "question":  "Which organisations are most influential in the AI ecosystem?",
+    "answer":  "For the question \u0027Which organisations are most influential in the AI ecosystem?\u0027, the strongest evidence comes from topic document \u00271 ai and the for\u0027. 1 ai and the for is a topic in the AI ecosystem graph. It has 680 organisations and 772 artefacts. The total influence score is 11044.708996. The leading organisation is microsoft with ID CORG_002127. Interpretability flag: machine_generated_low_interpretability. Additional retrieved evidence came from: 1 ai and the for, Hugging Face Model Adoption Cluster, Multimodal AI. This answer is grounded only in the indexed Stage 5 dashboard outputs.",
+    "model_version":  "baseline-rag-v1",
+    "evidence_count":  3,
+    "evidence":  [
+                     {
+                         "document_id":  "topic_n_topic_ab418837202e840622",
+                         "document_type":  "topic",
+                         "title":  "1 ai and the for",
+                         "score":  0.051068,
+                         "text":  "1 ai and the for is a topic in the AI ecosystem graph. It has 680 organisations and 772 artefacts. The total influence score is 11044.708996. The leading organisation is microsoft with ID CORG_002127. Interpretability flag: machine_generated_low_interpretability.",
+                         "metadata":  {
+                                          "document_type":  "topic",
+                                          "source_table":  "topic_leadership",
+                                          "created_at_utc":  "2026-07-01T12:21:15+00:00",
+                                          "primary_id":  "N_TOPIC_AB418837202E840622"
+                                      }
+                     },
+                     {
+                         "document_id":  "cluster_n_cluster_6d8c1f750d62eb39e9",
+                         "document_type":  "cluster",
+                         "title":  "Hugging Face Model Adoption Cluster",
+                         "score":  0.048423,
+                         "text":  "Hugging Face Model Adoption Cluster is a cluster in the AI ecosystem graph. It contains 59 organisations and 145 artefacts. The strongest bridge organisation is . The highest influence organisation is agentscope-ai.",
+                         "metadata":  {
+                                          "document_type":  "cluster",
+                                          "source_table":  "cluster_bridge",
+                                          "created_at_utc":  "2026-07-01T12:21:15+00:00",
+                                          "primary_id":  "N_CLUSTER_6D8C1F750D62EB39E9"
+                                      }
+                     },
+                     {
+                         "document_id":  "domain_n_domain_6ec089e93e90e76f98",
+                         "document_type":  "domain",
+                         "title":  "Multimodal AI",
+                         "score":  0.047733,
+                         "text":  "Multimodal AI is a domain-level grouping in the AI ecosystem graph. It contains 143 organisations and has total influence score 2467.08894. The leading organisation is MoonshotAI with ID CORG_002228.",
+                         "metadata":  {
+                                          "document_type":  "domain",
+                                          "source_table":  "domain_influence",
+                                          "created_at_utc":  "2026-07-01T12:21:15+00:00",
+                                          "primary_id":  "N_DOMAIN_6EC089E93E90E76F98"
+                                      }
+                     }
+                 ],
+    "latency_ms":  3.471
+}
+

@@ -1,0 +1,98 @@
+Dataset 2 Stage 05 Final Quality Audit Report
+================================================================================
+
+Stage 05 version: dataset2_final_quality_audit_ASTAR_v1.0
+Input topic-modelled file: data\processed\Dataset2_Topic_Modelled.csv
+Input topic summary file: data\processed\Dataset2_Topic_Summary.csv
+Input cluster summary file: data\processed\Dataset2_Cluster_Summary.csv
+Final visualisation-ready output: data\processed\Dataset2_Final_Visualisation_Ready.csv
+Final dashboard summary output: data\processed\Dataset2_Final_Dashboard_Summary.csv
+Final audit flags output: data\processed\Dataset2_Final_Audit_Flags.csv
+
+1. Dataset size
+- Final records: 1,885
+- Topic summary record total: 1,885
+- Cluster summary record total: 1,885
+- Dashboard summary rows: 44
+
+2. Final integrity checks
+- Duplicate ecosystem_id count: 0
+- Duplicate canonical_artefact_key count: 0
+- Missing topic labels: 0
+- Missing cluster labels: 0
+- Final rows marked ready: 1,885
+- Final rows marked review: 0
+
+3. Audit flag summary
+- Total final audit flags: 0
+- Critical final audit flags: 0
+- Review final audit flags: 0
+
+4. Topic and cluster quality
+- Unique topics: 12
+- Unique clusters: 6
+- Ambiguous topic assignments: 260 (13.79%)
+- High or medium-high topic confidence: 1,606 (85.20%)
+- Mean topic probability: 0.7251
+- Mean cluster confidence: 56.1773
+
+5. Score summary
+- Mean ecosystem impact score: 59.6143
+- Mean platform impact score: 35.6826
+- Mean innovation proxy score: 61.7009
+- Mean evidence strength score: 82.0474
+- Mean dashboard priority score: 60.9250
+
+6. Source distribution
+- GitHub: 1,494 (79.26%)
+- Hugging Face: 391 (20.74%)
+
+7. Artefact type distribution
+- Dataset: 133 (7.06%)
+- Model: 258 (13.69%)
+- Repository: 1,494 (79.26%)
+
+8. Impact band distribution
+- Elite: 19 (1.01%)
+- High: 76 (4.03%)
+- Medium: 283 (15.01%)
+- Emerging: 1,507 (79.95%)
+
+9. Dashboard priority distribution
+- Very High: 35 (1.86%)
+- High: 392 (20.80%)
+- Medium: 1,119 (59.36%)
+- Lower: 339 (17.98%)
+
+10. Final quality status distribution
+- ready: 1,885 (100.00%)
+
+11. Top 12 topics
+- Agentic Workflows and Tool-Using external systems: 339 (17.98%)
+- Multimodal and Vision-Language AI: 178 (9.44%)
+- Evaluation, Benchmarks and Safety: 171 (9.07%)
+- Fine-Tuning, LoRA and Model Adaptation: 167 (8.86%)
+- Retrieval-Augmented Generation Pipelines: 167 (8.86%)
+- Hallucination Detection and Verification: 147 (7.80%)
+- Knowledge Graph and Structured Retrieval: 142 (7.53%)
+- Dense Retrieval and Passage Search: 137 (7.27%)
+- Embedding Models and Semantic Retrieval - Vector and Database Focus: 133 (7.06%)
+- RAG Application Pipelines and Document QA: 111 (5.89%)
+- Embedding Models and Semantic Retrieval: 108 (5.73%)
+- Dataset Formats and Metadata Infrastructure: 85 (4.51%)
+
+12. Top 6 clusters
+- Retrieval and RAG Ecosystem Cluster - Higher-Impact Repository Group: 697 (36.98%)
+- High-Impact GitHub Implementation Cluster: 424 (22.49%)
+- Retrieval and RAG Ecosystem Cluster - Lower-Impact Repository Group: 317 (16.82%)
+- Metadata-Limited Hugging Face Review Cluster: 168 (8.91%)
+- Hugging Face Model Adoption Cluster: 145 (7.69%)
+- Hugging Face Dataset Reuse Cluster: 134 (7.11%)
+
+13. Final Stage 05 verdict
+- Dataset 2 final visualisation readiness: high
+- Final scores are proxy indicators and should not be interpreted as objective technical quality.
+- This file is ready for dissertation analysis, charts, dashboards and final Dataset 2 reporting if readiness is high.
+
+
+

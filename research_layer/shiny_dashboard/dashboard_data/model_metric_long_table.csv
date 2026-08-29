@@ -1,0 +1,86 @@
+"model_key","model_name","display_model_name","method_family","source_stage","model_type","metric_name","metric_value"
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline","accuracy",0.987861811391223
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline","precision",0
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline","recall",0
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline","specificity",1
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline","balanced_accuracy",0.5
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline","f1_score",0
+"Machine Learning__R__majority_class_baseline","majority_class_baseline","Machine Learning - Majority Class Baseline","Machine Learning","R","baseline","auc",0.5
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model","accuracy",0.993464052287582
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model","precision",0.65
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model","recall",1
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model","specificity",0.993383742911153
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model","balanced_accuracy",0.996691871455577
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model","f1_score",0.787878787878788
+"Machine Learning__R__logistic_regression","logistic_regression","Machine Learning - Logistic Regression","Machine Learning","R","model","auc",0.996691871455577
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model","accuracy",0.976657329598506
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model","precision",0.342105263157895
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model","recall",1
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model","specificity",0.976370510396975
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model","balanced_accuracy",0.988185255198488
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model","f1_score",0.509803921568628
+"Machine Learning__R__decision_tree","decision_tree","Machine Learning - Decision Tree","Machine Learning","R","model","auc",0.988185255198488
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model","accuracy",0.99813258636788
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model","precision",0.923076923076923
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model","recall",0.923076923076923
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model","specificity",0.999054820415879
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model","balanced_accuracy",0.961065871746401
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model","f1_score",0.923076923076923
+"Machine Learning__R__random_forest","random_forest","Machine Learning - Random Forest","Machine Learning","R","model","auc",0.999636469390723
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model","accuracy",0.990662931839402
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model","precision",1
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model","recall",0.230769230769231
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model","specificity",1
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model","balanced_accuracy",0.615384615384615
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model","f1_score",0.375
+"Machine Learning__R__support_vector_machine","support_vector_machine","Machine Learning - Support Vector Machine","Machine Learning","R","model","auc",0.996291987785372
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model","accuracy",0.971055088702148
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model","precision",0.295454545454545
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model","recall",1
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model","specificity",0.97069943289225
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model","balanced_accuracy",0.985349716446125
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model","f1_score",0.456140350877193
+"Machine Learning__R__naive_bayes","naive_bayes","Machine Learning - Naive Bayes","Machine Learning","R","model","auc",0.994328922495274
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline","accuracy",0.987861811391223
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline","precision",0
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline","recall",0
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline","specificity",1
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline","balanced_accuracy",0.5
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline","f1_score",0
+"Deep Learning__Python__majority_class_baseline","majority_class_baseline","Deep Learning - Majority Class Baseline","Deep Learning","Python","baseline","auc",0.5
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model","accuracy",0.994397759103641
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model","precision",0.705882352941177
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model","recall",0.923076923076923
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model","specificity",0.995274102079395
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model","balanced_accuracy",0.959175512578159
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model","f1_score",0.8
+"Deep Learning__Python__shallow_neural_network","shallow_neural_network","Deep Learning - Shallow Neural Network","Deep Learning","Python","model","auc",0.998909408172168
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model","accuracy",0.993464052287582
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model","precision",0.65
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model","recall",1
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model","specificity",0.993383742911153
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model","balanced_accuracy",0.996691871455577
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model","f1_score",0.787878787878788
+"Deep Learning__Python__deep_neural_network","deep_neural_network","Deep Learning - Deep Neural Network","Deep Learning","Python","model","auc",0.99840046531918
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model","accuracy",0.994397759103641
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model","precision",0.705882352941177
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model","recall",0.923076923076923
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model","specificity",0.995274102079395
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model","balanced_accuracy",0.959175512578159
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model","f1_score",0.8
+"Deep Learning__Python__wide_neural_network","wide_neural_network","Deep Learning - Wide Neural Network","Deep Learning","Python","model","auc",0.999272938781445
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model","accuracy",0.989729225023343
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model","precision",0.545454545454545
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model","recall",0.923076923076923
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model","specificity",0.99054820415879
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model","balanced_accuracy",0.956812563617857
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model","f1_score",0.685714285714286
+"Deep Learning__Python__narrow_deep_neural_network","narrow_deep_neural_network","Deep Learning - Narrow Deep Neural Network","Deep Learning","Python","model","auc",0.997673404100625
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model","accuracy",0.993464052287582
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model","precision",0.65
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model","recall",1
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model","specificity",0.993383742911153
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model","balanced_accuracy",0.996691871455577
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model","f1_score",0.787878787878788
+"Deep Learning__Python__dropout_neural_network","dropout_neural_network","Deep Learning - Dropout Neural Network","Deep Learning","Python","model","auc",0.999272938781445
+

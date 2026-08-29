@@ -1,0 +1,64 @@
+Dataset 1 Feature Engineering Report
+================================================================================
+
+Feature engineering script version: dataset1_feature_engineering_ASTAR_v1.0
+Input file: data\processed\Dataset1_Research_Literature_Clean_Final.csv
+Output file: data\processed\Dataset1_Feature_Engineered.csv
+
+1. Dataset size
+- Feature-engineered rows: 9,053
+
+2. Theme structure
+- Mean theme count per paper: 1.578
+- Multi-theme papers: 4,648 (51.34%)
+
+3. Dominant theme distribution
+- Agents and tool use: 491 (5.42%)
+- Evaluation and benchmarks: 402 (4.44%)
+- external systems and external systems: 6,381 (70.48%)
+- Hallucination and factuality: 91 (1.01%)
+- RAG and retrieval: 1,440 (15.91%)
+- Reasoning and planning: 248 (2.74%)
+
+4. Research value bands
+- high: 6,050 (66.83%)
+- medium: 369 (4.08%)
+- medium_high: 2,450 (27.06%)
+- very_high: 184 (2.03%)
+
+5. Trend categories
+- cross_cutting: 87 (0.96%)
+- current_high_value: 2,827 (31.23%)
+- emerging_multi_theme: 1,814 (20.04%)
+- established_foundational: 86 (0.95%)
+- standard: 4,239 (46.82%)
+
+6. Ecosystem relevance bands
+- high_ecosystem_relevance: 4,444 (49.09%)
+- low_ecosystem_relevance: 499 (5.51%)
+- medium_ecosystem_relevance: 4,056 (44.80%)
+- very_high_ecosystem_relevance: 54 (0.60%)
+
+7. Year distribution
+- 2020: 109 (1.20%)
+- 2021: 128 (1.41%)
+- 2022: 285 (3.15%)
+- 2023: 1,629 (17.99%)
+- 2024: 3,064 (33.85%)
+- 2025: 2,201 (24.31%)
+- 2026: 1,637 (18.08%)
+
+8. Composite scoring
+- Mean research value score: 6.758
+- Research value score combines recency, source strength, metadata completeness, citation proxy, novelty proxy, theme strength and raw relevance.
+- Citation count is treated only as a proxy because citation metadata differs between sources.
+- Novelty score is a transparent proxy, not a claim of true scientific novelty.
+
+9. Academic interpretation
+- The output is ready for trend analysis, visualisation and topic modelling.
+- Theme scores are transparent keyword-based features, not final human labels.
+- Topic modelling should be performed in the next stage to discover latent themes.
+- No fake authors, institutions, countries or citation counts were generated.
+
+
+

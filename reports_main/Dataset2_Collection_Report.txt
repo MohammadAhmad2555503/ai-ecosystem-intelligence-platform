@@ -1,0 +1,68 @@
+Dataset 2 Stage 01 Collection Report
+================================================================================
+
+Collector version: dataset2_collect_ecosystem_ASTAR_final_v1.1
+Generated at UTC: 2026-06-19T00:12:09+00:00
+Raw output: data\raw\Dataset2_Raw_Ecosystem.csv
+Collection log: data\raw\Dataset2_Collection_Log.csv
+
+1. Collection configuration
+- Query count: 16
+- GitHub included: True
+- Hugging Face models included: True
+- Hugging Face datasets included: True
+- GitHub pages per query: 2
+- GitHub per page: 50
+- GitHub max retained per query: 100
+- Hugging Face limit per query: 100
+- GitHub token status: not_present
+- Hugging Face token status: not_present
+
+2. Dataset size
+- Raw unique ecosystem artefacts collected: 1,885
+
+3. Source distribution
+- github: 1,494 (79.26%)
+- huggingface: 391 (20.74%)
+
+4. Artefact type distribution
+- dataset: 133 (7.06%)
+- model: 258 (13.69%)
+- repository: 1,494 (79.26%)
+
+5. Collection log status
+- Total API calls logged: 64
+- ok: 64
+- error: 0
+
+6. Queries used
+- retrieval augmented generation
+- RAG external system
+- external system
+- external system agents
+- AI agents
+- hallucination detection
+- factuality external system
+- dense retrieval
+- vector database embeddings
+- embedding retrieval
+- question answering external system
+- knowledge graph RAG
+- external system evaluation benchmark
+- fine tuning external system
+- multimodal external system
+- external system tool use
+
+7. Academic notes
+- This is the raw Dataset 2 ecosystem layer.
+- It contains public metadata from GitHub and Hugging Face.
+- No metric values were invented or backfilled.
+- Missing values are left blank or zero only where the platform does not provide that metric.
+- Exact repeated artefacts retrieved by multiple queries are aggregated only to preserve query provenance.
+- Deeper validation, cleaning, deduplication and scoring should be performed in Stage 02 and Stage 03.
+
+8. Stage 01 readiness
+- Collection readiness: high
+
+
+

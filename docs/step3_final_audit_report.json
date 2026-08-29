@@ -1,0 +1,43 @@
+{
+  "step": "Step 3 final draft",
+  "normal_run_return_code": 0,
+  "normal_run_output": "Indexed 166 documents and wrote 5 search results.",
+  "test_run_return_code": 0,
+  "test_run_output": [
+    "\u2705 Sunny day test passed: documents were indexed.",
+    "\u2705 Edge case test passed: index and manifest files were written.",
+    "\u2705 Weird gotcha test passed: semantic search returned a result.",
+    "\u2705 Bug catcher test passed: retrieved result kept the source ID."
+  ],
+  "vector_index_manifest": {
+    "record_count": 166,
+    "document_type_counts": {
+      "organisation": 100,
+      "topic": 25,
+      "platform": 11,
+      "domain": 10,
+      "cluster": 6,
+      "kpi": 14
+    }
+  },
+  "sample_top_result": {
+    "document_id": "cluster_n_cluster_97d247cd49d8f19a23",
+    "document_type": "cluster",
+    "title": "High-Impact GitHub Implementation Cluster",
+    "score": 0.13680034293538565,
+    "text": "High-Impact GitHub Implementation Cluster is a cluster in the AI ecosystem graph. It contains 366 organisations and 424 artefacts. The strongest bridge organisation is microsoft. The highest influence organisation is microsoft.",
+    "metadata": {
+      "document_type": "cluster",
+      "source_table": "cluster_bridge",
+      "created_at_utc": "2026-06-29T13:41:46+00:00",
+      "primary_id": "N_CLUSTER_97D247CD49D8F19A23"
+    }
+  },
+  "style_report": {
+    "long_functions_over_15_lines": [],
+    "long_lines_over_100_chars": [],
+    "single_letter_names": []
+  },
+  "runtime_folders_removed": true,
+  "final_verdict": "pass"
+}

@@ -1,0 +1,4 @@
+"method_family","model_count","best_f1_score","mean_f1_score","mean_auc","mean_balanced_accuracy"
+"Deep Learning",5,0.8,0.772294372294372,0.998705831030973,0.973709466337066
+"Machine Learning",5,0.923076923076923,0.610379996680306,0.995026901265087,0.909335466046241
+

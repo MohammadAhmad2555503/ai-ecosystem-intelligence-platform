@@ -1,0 +1,96 @@
+Dataset 3 Stage 04 Graph Analytics and Influence Scoring Report
+================================================================================
+
+Collector version: dataset3_stage04_graph_analytics_ASTAR_v1.1_fixed_top_ids
+Run ID: D3_STAGE04_20260620T193017Z
+KG nodes input: data\graph\Dataset3_KG_Nodes.csv
+KG edges input: data\graph\Dataset3_KG_Edges.csv
+Canonical organisations input: data\processed\Dataset3_Canonical_Organisations.csv
+Canonical links input: data\processed\Dataset3_Canonical_Organisation_Artefact_Links.csv
+
+1. Stage 04 purpose
+- Compute graph centrality for all KG nodes.
+- Compute organisation influence scores using graph, impact, adoption, evidence and diversity signals.
+- Identify topic leadership, platform dominance, domain influence and cluster bridge roles.
+- Produce auditable analytics outputs for dissertation reporting and dashboarding.
+- Fixed v1.1 validates that every named top organisation in summary tables has its canonical organisation ID.
+
+2. Input size
+- KG nodes: 10,900
+- KG edges: 49,418
+- Canonical organisations: 4,283
+- Canonical organisation-artefact links: 7,119
+
+3. Output size
+- Organisation influence rows: 4,283
+- Graph centrality rows: 10,900
+- Topic leadership rows: 25
+- Platform dominance rows: 11
+- Domain influence rows: 10
+- Cluster bridge rows: 6
+- Audit rows: 19
+
+4. Influence band distribution
+- low: 3,192 (74.53%)
+- emerging: 1,039 (24.26%)
+- medium: 50 (1.17%)
+- high: 2 (0.05%)
+
+5. Top 10 organisations by influence score
+- #1: microsoft | id=CORG_002127 | score=79.258 | band=high | platform=github | topic=Agentic Workflows and Tool-Using external systems
+- #2: NVIDIA | id=CORG_002418 | score=72.632 | band=high | platform=github | topic=Multimodal and Vision-Language AI
+- #3: google | id=CORG_001259 | score=69.787 | band=medium | platform=github | topic=Agentic Workflows and Tool-Using external systems
+- #4: research lab | id=CORG_002470 | score=66.198 | band=medium | platform=github | topic=Agentic Workflows and Tool-Using external systems
+- #5: meta-llama | id=CORG_002112 | score=61.134 | band=medium | platform=github | topic=Fine-Tuning, LoRA and Model Adaptation
+- #6: agentscope-ai | id=CORG_000129 | score=59.940 | band=medium | platform=huggingface | topic=Evaluation, Benchmarks and Safety
+- #7: deepseek-ai | id=CORG_000845 | score=59.645 | band=medium | platform=github | topic=Agentic Workflows and Tool-Using external systems
+- #8: OpenBMB | id=CORG_002472 | score=59.559 | band=medium | platform=github | topic=Agentic Workflows and Tool-Using external systems
+- #9: jinaai | id=CORG_003923 | score=58.612 | band=medium | platform=huggingface | topic=Embedding Models and Semantic Retrieval
+- #10: NousResearch | id=CORG_002399 | score=58.231 | band=medium | platform=github | topic=Agentic Workflows and Tool-Using external systems
+
+6. Topic leadership summary
+- -1_and_the_to_for: organisations=1225, top=microsoft (CORG_002127), total_influence=18428.989
+- Agentic Workflows and Tool-Using external systems: organisations=264, top=microsoft (CORG_002127), total_influence=11094.308
+- 1_ai_and_the_for: organisations=680, top=microsoft (CORG_002127), total_influence=11044.709
+- 2_generation_rag_retrievalaugmented_retrieval: organisations=625, top=microsoft (CORG_002127), total_influence=7290.117
+- Multimodal and Vision-Language AI: organisations=157, top=microsoft (CORG_002127), total_influence=6221.505
+- Retrieval-Augmented Generation Pipelines: organisations=154, top=microsoft (CORG_002127), total_influence=5767.313
+- 0_regionus_librarymlcroissant_librarydatasets_modalitytext: organisations=342, top=microsoft (CORG_002127), total_influence=5729.777
+- Evaluation, Benchmarks and Safety: organisations=154, top=microsoft (CORG_002127), total_influence=5643.631
+- Fine-Tuning, LoRA and Model Adaptation: organisations=155, top=meta-llama (CORG_002112), total_influence=5265.694
+- Knowledge Graph and Structured Retrieval: organisations=139, top=microsoft (CORG_002127), total_influence=4991.157
+
+7. Platform dominance summary
+- github: organisations=3730, artefacts=4998, top=microsoft (CORG_002127), total_influence=60903.048
+- huggingface: organisations=547, artefacts=391, top=microsoft (CORG_002127), total_influence=10739.565
+- HF_Dataset: organisations=292, artefacts=656, top=microsoft (CORG_002127), total_influence=4285.674
+- HF_Model: organisations=131, artefacts=1074, top=microsoft (CORG_002127), total_influence=3286.709
+- yc_secondary: organisations=31, artefacts=0, top=Mintplex-Labs (CORG_002159), total_influence=718.401
+- yc: organisations=19, artefacts=0, top=Mintplex-Labs (CORG_002159), total_influence=473.020
+- wikidata: organisations=11, artefacts=0, top=microsoft (CORG_002127), total_influence=431.521
+- unicorn: organisations=6, artefacts=0, top=research lab (CORG_002470), total_influence=243.244
+- startup_graph: organisations=5, artefacts=0, top=activepieces (CORG_000094), total_influence=139.112
+- openalex: organisations=59, artefacts=0, top=ACENTAURI: Intelligence artificielle et algorithmes efficaces pour la robotique autonome (CORG_004204), total_influence=25.091
+
+8. Integrity and audit checks
+- Organisation score preservation: pass
+- Centrality preservation: pass
+- Duplicate organisation score IDs: 0
+- Failed audit metrics: 0
+
+9. Output files
+- Organisation influence scores: data\analytics\Dataset3_Organisation_Influence_Scores.csv
+- Graph centrality: data\analytics\Dataset3_Graph_Centrality.csv
+- Topic leadership: data\analytics\Dataset3_Topic_Leadership.csv
+- Platform dominance: data\analytics\Dataset3_Platform_Dominance.csv
+- Domain influence: data\analytics\Dataset3_Domain_Influence.csv
+- Cluster bridge analysis: data\analytics\Dataset3_Cluster_Bridge_Analysis.csv
+- Stage 4 analytics audit: data\analytics\Dataset3_Stage4_Analytics_Audit.csv
+
+10. Final Stage 04 verdict
+- Stage 04 readiness: high
+- Runtime seconds: 24.321
+
+
+
+

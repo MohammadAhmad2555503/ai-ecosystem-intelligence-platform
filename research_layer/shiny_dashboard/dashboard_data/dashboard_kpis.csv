@@ -1,0 +1,9 @@
+"metric","value"
+"total_model_rows","12"
+"real_model_count","10"
+"baseline_count","2"
+"best_model","Machine Learning - Random Forest"
+"best_model_f1_score","0.923077"
+"best_model_auc","0.999636"
+"script_version","research_layer_step05_prepare_shiny_dashboard_data_v4_root_final"
+

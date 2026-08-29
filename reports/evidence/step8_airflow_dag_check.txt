@@ -1,0 +1,5 @@
+PASS: DAG file exists.
+PASS: DAG ID is present.
+PASS: Kubernetes support is present.
+PASS: all required task IDs are present.
+

@@ -1,0 +1,12 @@
+[project]
+name = "ai-ecosystem-intelligence-platform"
+version = "0.1.0"
+description = "Production-style AI ecosystem intelligence platform built from dissertation datasets."
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
